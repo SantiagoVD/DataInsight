@@ -1,0 +1,34 @@
+# Variables de entorno locales
+.env
+.env.*
+!.env.example
+frontend/.env.local
+
+# Dependencias y builds del frontend
+frontend/node_modules/
+frontend/dist/
+frontend/.vite/
+
+# Builds y artefactos de .NET
+**/bin/
+**/obj/
+
+# Archivos generados por Visual Studio y herramientas .NET
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Logs y archivos temporales
+*.log
+*.tmp
+*.temp
+*.swp
+Thumbs.db
+.DS_Store
+
+# Configuración local de editores
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json

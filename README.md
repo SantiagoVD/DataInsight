@@ -146,11 +146,13 @@ cd frontend
 npm install
 ```
 
-Copia `.env.example` como `.env.local` y configura la URL de la API:
+Copia `.env.example` como `.env.local` y configura la URL de la API. La variable que usa actualmente el frontend es `VITE_API_BASE_URL`:
 
 ```env
 VITE_API_BASE_URL=https://<api-id>.execute-api.<region>.amazonaws.com/Prod
 ```
+
+> Nota: el proyecto no utiliza `import.meta.env.VITE_API_URL`; configurar ese nombre no cambiaría la URL consumida por la aplicación.
 
 Inicia el servidor de desarrollo:
 
