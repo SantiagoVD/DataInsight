@@ -1,0 +1,600 @@
+{
+  "AWSTemplateFormatVersion": "2010-09-09",
+  "Transform": "AWS::Serverless-2016-10-31",
+  "Description": "DataInsight - Serverless file processing application",
+
+  "Resources": {
+
+    "ServerlessRestApi": {
+      "Type": "AWS::ApiGateway::RestApi",
+      "Properties": {
+        "Name": "data-insight",
+        "EndpointConfiguration": {
+          "Types": [
+            "REGIONAL"
+          ]
+        }
+      }
+    },
+
+    "ProcessingQueue": {
+      "Type": "AWS::SQS::Queue",
+      "Properties": {
+        "QueueName": "data-insight-processing-queue",
+        "VisibilityTimeout": 60
+      }
+    },
+
+    "DataBucket": {
+      "Type": "AWS::S3::Bucket",
+      "Properties": {
+        "BucketName": "data-insight-files-santiago-2026",
+
+        "PublicAccessBlockConfiguration": {
+          "BlockPublicAcls": true,
+          "IgnorePublicAcls": true,
+          "BlockPublicPolicy": true,
+          "RestrictPublicBuckets": true
+        },
+
+        "CorsConfiguration": {
+          "CorsRules": [
+            {
+              "AllowedOrigins": [
+                "*"
+              ],
+              "AllowedMethods": [
+                "PUT",
+                "GET",
+                "HEAD"
+              ],
+              "AllowedHeaders": [
+                "*"
+              ],
+              "ExposedHeaders": [
+                "ETag"
+              ],
+              "MaxAge": 3000
+            }
+          ]
+        }
+      }
+    },
+
+    "CreateJobFunction": {
+      "Type": "AWS::Serverless::Function",
+      "Properties": {
+        "FunctionName": "data-insight-create-job",
+
+        "Handler": "DataInsight::DataInsight.src.DataInsight.Api.Function::FunctionHandler",
+
+        "Runtime": "dotnet8",
+
+        "CodeUri": ".",
+
+        "MemorySize": 256,
+
+        "Timeout": 10,
+
+        "Environment": {
+          "Variables": {
+            "PROCESSING_QUEUE_URL": {
+              "Ref": "ProcessingQueue"
+            },
+
+            "DATA_BUCKET_NAME": {
+              "Ref": "DataBucket"
+            }
+          }
+        },
+
+        "Policies": [
+          {
+            "SQSSendMessagePolicy": {
+              "QueueName": {
+                "Fn::GetAtt": [
+                  "ProcessingQueue",
+                  "QueueName"
+                ]
+              }
+            }
+          },
+
+          {
+            "S3WritePolicy": {
+              "BucketName": {
+                "Ref": "DataBucket"
+              }
+            }
+          },
+
+          {
+            "S3ReadPolicy": {
+              "BucketName": {
+                "Ref": "DataBucket"
+              }
+            }
+          }
+        ]
+      }
+    },
+
+    "JobsResource": {
+      "Type": "AWS::ApiGateway::Resource",
+      "Properties": {
+        "RestApiId": {
+          "Ref": "ServerlessRestApi"
+        },
+
+        "ParentId": {
+          "Fn::GetAtt": [
+            "ServerlessRestApi",
+            "RootResourceId"
+          ]
+        },
+
+        "PathPart": "jobs"
+      }
+    },
+
+    "JobResultResource": {
+      "Type": "AWS::ApiGateway::Resource",
+      "Properties": {
+        "RestApiId": {
+          "Ref": "ServerlessRestApi"
+        },
+
+        "ParentId": {
+          "Ref": "JobsResource"
+        },
+
+        "PathPart": "{jobId}"
+      }
+    },
+
+    "UploadsResource": {
+      "Type": "AWS::ApiGateway::Resource",
+      "Properties": {
+        "RestApiId": {
+          "Ref": "ServerlessRestApi"
+        },
+
+        "ParentId": {
+          "Fn::GetAtt": [
+            "ServerlessRestApi",
+            "RootResourceId"
+          ]
+        },
+
+        "PathPart": "uploads"
+      }
+    },
+
+    "JobsPostMethod": {
+      "Type": "AWS::ApiGateway::Method",
+      "Properties": {
+        "RestApiId": {
+          "Ref": "ServerlessRestApi"
+        },
+
+        "ResourceId": {
+          "Ref": "JobsResource"
+        },
+
+        "HttpMethod": "POST",
+
+        "AuthorizationType": "NONE",
+
+        "Integration": {
+          "Type": "AWS_PROXY",
+
+          "IntegrationHttpMethod": "POST",
+
+          "Uri": {
+            "Fn::Sub": "arn:${AWS::Partition}:apigateway:${AWS::Region}:lambda:path/2015-03-31/functions/${CreateJobFunction.Arn}/invocations"
+          }
+        }
+      }
+    },
+
+    "JobsOptionsMethod": {
+      "Type": "AWS::ApiGateway::Method",
+      "Properties": {
+        "RestApiId": {
+          "Ref": "ServerlessRestApi"
+        },
+
+        "ResourceId": {
+          "Ref": "JobsResource"
+        },
+
+        "HttpMethod": "OPTIONS",
+
+        "AuthorizationType": "NONE",
+
+        "Integration": {
+          "Type": "MOCK",
+
+          "RequestTemplates": {
+            "application/json": "{\"statusCode\":200}"
+          },
+
+          "IntegrationResponses": [
+            {
+              "StatusCode": "200",
+
+              "ResponseParameters": {
+                "method.response.header.Access-Control-Allow-Headers": "'Content-Type'",
+                "method.response.header.Access-Control-Allow-Methods": "'POST,OPTIONS'",
+                "method.response.header.Access-Control-Allow-Origin": "'*'"
+              }
+            }
+          ]
+        },
+
+        "MethodResponses": [
+          {
+            "StatusCode": "200",
+
+            "ResponseParameters": {
+              "method.response.header.Access-Control-Allow-Headers": true,
+              "method.response.header.Access-Control-Allow-Methods": true,
+              "method.response.header.Access-Control-Allow-Origin": true
+            }
+          }
+        ]
+      }
+    },
+
+    "JobResultGetMethod": {
+      "Type": "AWS::ApiGateway::Method",
+      "Properties": {
+        "RestApiId": {
+          "Ref": "ServerlessRestApi"
+        },
+
+        "ResourceId": {
+          "Ref": "JobResultResource"
+        },
+
+        "HttpMethod": "GET",
+
+        "AuthorizationType": "NONE",
+
+        "RequestParameters": {
+          "method.request.path.jobId": true
+        },
+
+        "Integration": {
+          "Type": "AWS_PROXY",
+
+          "IntegrationHttpMethod": "POST",
+
+          "Uri": {
+            "Fn::Sub": "arn:${AWS::Partition}:apigateway:${AWS::Region}:lambda:path/2015-03-31/functions/${CreateJobFunction.Arn}/invocations"
+          }
+        }
+      }
+    },
+
+    "JobResultOptionsMethod": {
+      "Type": "AWS::ApiGateway::Method",
+      "Properties": {
+        "RestApiId": {
+          "Ref": "ServerlessRestApi"
+        },
+
+        "ResourceId": {
+          "Ref": "JobResultResource"
+        },
+
+        "HttpMethod": "OPTIONS",
+
+        "AuthorizationType": "NONE",
+
+        "Integration": {
+          "Type": "MOCK",
+
+          "RequestTemplates": {
+            "application/json": "{\"statusCode\":200}"
+          },
+
+          "IntegrationResponses": [
+            {
+              "StatusCode": "200",
+
+              "ResponseParameters": {
+                "method.response.header.Access-Control-Allow-Headers": "'Content-Type'",
+                "method.response.header.Access-Control-Allow-Methods": "'GET,OPTIONS'",
+                "method.response.header.Access-Control-Allow-Origin": "'*'"
+              }
+            }
+          ]
+        },
+
+        "MethodResponses": [
+          {
+            "StatusCode": "200",
+
+            "ResponseParameters": {
+              "method.response.header.Access-Control-Allow-Headers": true,
+              "method.response.header.Access-Control-Allow-Methods": true,
+              "method.response.header.Access-Control-Allow-Origin": true
+            }
+          }
+        ]
+      }
+    },
+
+    "UploadsPostMethod": {
+      "Type": "AWS::ApiGateway::Method",
+      "Properties": {
+        "RestApiId": {
+          "Ref": "ServerlessRestApi"
+        },
+
+        "ResourceId": {
+          "Ref": "UploadsResource"
+        },
+
+        "HttpMethod": "POST",
+
+        "AuthorizationType": "NONE",
+
+        "Integration": {
+          "Type": "AWS_PROXY",
+
+          "IntegrationHttpMethod": "POST",
+
+          "Uri": {
+            "Fn::Sub": "arn:${AWS::Partition}:apigateway:${AWS::Region}:lambda:path/2015-03-31/functions/${CreateJobFunction.Arn}/invocations"
+          }
+        }
+      }
+    },
+
+    "UploadsOptionsMethod": {
+      "Type": "AWS::ApiGateway::Method",
+      "Properties": {
+        "RestApiId": {
+          "Ref": "ServerlessRestApi"
+        },
+
+        "ResourceId": {
+          "Ref": "UploadsResource"
+        },
+
+        "HttpMethod": "OPTIONS",
+
+        "AuthorizationType": "NONE",
+
+        "Integration": {
+          "Type": "MOCK",
+
+          "RequestTemplates": {
+            "application/json": "{\"statusCode\":200}"
+          },
+
+          "IntegrationResponses": [
+            {
+              "StatusCode": "200",
+
+              "ResponseParameters": {
+                "method.response.header.Access-Control-Allow-Headers": "'Content-Type'",
+                "method.response.header.Access-Control-Allow-Methods": "'POST,OPTIONS'",
+                "method.response.header.Access-Control-Allow-Origin": "'*'"
+              }
+            }
+          ]
+        },
+
+        "MethodResponses": [
+          {
+            "StatusCode": "200",
+
+            "ResponseParameters": {
+              "method.response.header.Access-Control-Allow-Headers": true,
+              "method.response.header.Access-Control-Allow-Methods": true,
+              "method.response.header.Access-Control-Allow-Origin": true
+            }
+          }
+        ]
+      }
+    },
+
+    "JobsApiGatewayInvokePermission": {
+      "Type": "AWS::Lambda::Permission",
+      "Properties": {
+        "Action": "lambda:InvokeFunction",
+
+        "FunctionName": {
+          "Ref": "CreateJobFunction"
+        },
+
+        "Principal": "apigateway.amazonaws.com",
+
+        "SourceArn": {
+          "Fn::Sub": "arn:${AWS::Partition}:execute-api:${AWS::Region}:${AWS::AccountId}:${ServerlessRestApi}/Prod/POST/jobs"
+        }
+      }
+    },
+
+    "UploadsApiGatewayInvokePermission": {
+      "Type": "AWS::Lambda::Permission",
+      "Properties": {
+        "Action": "lambda:InvokeFunction",
+
+        "FunctionName": {
+          "Ref": "CreateJobFunction"
+        },
+
+        "Principal": "apigateway.amazonaws.com",
+
+        "SourceArn": {
+          "Fn::Sub": "arn:${AWS::Partition}:execute-api:${AWS::Region}:${AWS::AccountId}:${ServerlessRestApi}/Prod/POST/uploads"
+        }
+      }
+    },
+
+    "JobResultApiGatewayInvokePermission": {
+      "Type": "AWS::Lambda::Permission",
+      "Properties": {
+        "Action": "lambda:InvokeFunction",
+
+        "FunctionName": {
+          "Ref": "CreateJobFunction"
+        },
+
+        "Principal": "apigateway.amazonaws.com",
+
+        "SourceArn": {
+          "Fn::Sub": "arn:${AWS::Partition}:execute-api:${AWS::Region}:${AWS::AccountId}:${ServerlessRestApi}/Prod/GET/jobs/*"
+        }
+      }
+    },
+
+    "ApiDeploymentV2": {
+      "Type": "AWS::ApiGateway::Deployment",
+
+      "DependsOn": [
+        "JobsPostMethod",
+        "JobsOptionsMethod",
+        "JobResultGetMethod",
+        "JobResultOptionsMethod",
+        "UploadsPostMethod",
+        "UploadsOptionsMethod"
+      ],
+
+      "Properties": {
+        "RestApiId": {
+          "Ref": "ServerlessRestApi"
+        },
+
+        "StageName": "Prod"
+      }
+    },
+
+    "ProcessFileFunction": {
+      "Type": "AWS::Serverless::Function",
+
+      "Properties": {
+        "FunctionName": "data-insight-process-file",
+
+        "Handler": "DataInsight.Worker::DataInsight.Worker.Function::FunctionHandler",
+
+        "Runtime": "dotnet8",
+
+        "CodeUri": "../DataInsight.Worker",
+
+        "MemorySize": 256,
+
+        "Timeout": 30,
+
+        "Policies": [
+          {
+            "S3ReadPolicy": {
+              "BucketName": {
+                "Ref": "DataBucket"
+              }
+            }
+          },
+
+          {
+            "S3WritePolicy": {
+              "BucketName": {
+                "Ref": "DataBucket"
+              }
+            }
+          }
+        ],
+
+        "Events": {
+          "ProcessingQueueEvent": {
+            "Type": "SQS",
+
+            "Properties": {
+              "Queue": {
+                "Fn::GetAtt": [
+                  "ProcessingQueue",
+                  "Arn"
+                ]
+              },
+
+              "BatchSize": 1
+            }
+          }
+        }
+      }
+    }
+  },
+
+  "Outputs": {
+
+    "ProcessingQueueUrl": {
+      "Description": "URL of the processing SQS queue",
+
+      "Value": {
+        "Ref": "ProcessingQueue"
+      }
+    },
+
+    "ProcessingQueueArn": {
+      "Description": "ARN of the processing SQS queue",
+
+      "Value": {
+        "Fn::GetAtt": [
+          "ProcessingQueue",
+          "Arn"
+        ]
+      }
+    },
+
+    "DataBucketName": {
+      "Description": "S3 bucket used by DataInsight",
+
+      "Value": {
+        "Ref": "DataBucket"
+      }
+    },
+
+    "CreateJobApiUrl": {
+      "Description": "API endpoint for creating jobs",
+
+      "Value": {
+        "Fn::Sub": "https://${ServerlessRestApi}.execute-api.${AWS::Region}.amazonaws.com/Prod/jobs"
+      }
+    },
+
+    "CreateUploadApiUrl": {
+      "Description": "API endpoint for generating upload URLs",
+
+      "Value": {
+        "Fn::Sub": "https://${ServerlessRestApi}.execute-api.${AWS::Region}.amazonaws.com/Prod/uploads"
+      }
+    },
+
+    "GetJobResultApiUrl": {
+      "Description": "API endpoint for retrieving processing results",
+
+      "Value": {
+        "Fn::Sub": "https://${ServerlessRestApi}.execute-api.${AWS::Region}.amazonaws.com/Prod/jobs/{jobId}"
+      }
+    },
+
+    "CreateJobFunctionName": {
+      "Description": "Lambda function used by the API",
+
+      "Value": {
+        "Ref": "CreateJobFunction"
+      }
+    },
+
+    "ProcessFileFunctionName": {
+      "Description": "Lambda worker used to process CSV files",
+
+      "Value": {
+        "Ref": "ProcessFileFunction"
+      }
+    }
+  }
+}

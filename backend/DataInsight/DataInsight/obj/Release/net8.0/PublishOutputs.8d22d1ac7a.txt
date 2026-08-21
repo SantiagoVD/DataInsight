@@ -1,0 +1,11 @@
+C:\Users\Santiago\source\repos\DataInsight\DataInsight\bin\Release\net8.0\publish\DataInsight.dll
+C:\Users\Santiago\source\repos\DataInsight\DataInsight\bin\Release\net8.0\publish\DataInsight.deps.json
+C:\Users\Santiago\source\repos\DataInsight\DataInsight\bin\Release\net8.0\publish\DataInsight.runtimeconfig.json
+C:\Users\Santiago\source\repos\DataInsight\DataInsight\bin\Release\net8.0\publish\DataInsight.pdb
+C:\Users\Santiago\source\repos\DataInsight\DataInsight\bin\Release\net8.0\publish\Amazon.Lambda.APIGatewayEvents.dll
+C:\Users\Santiago\source\repos\DataInsight\DataInsight\bin\Release\net8.0\publish\Amazon.Lambda.Core.dll
+C:\Users\Santiago\source\repos\DataInsight\DataInsight\bin\Release\net8.0\publish\Amazon.Lambda.Serialization.SystemTextJson.dll
+C:\Users\Santiago\source\repos\DataInsight\DataInsight\bin\Release\net8.0\publish\AWSSDK.Core.dll
+C:\Users\Santiago\source\repos\DataInsight\DataInsight\bin\Release\net8.0\publish\AWSSDK.SQS.dll
+C:\Users\Santiago\source\repos\DataInsight\DataInsight\bin\Release\net8.0\publish\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\Santiago\source\repos\DataInsight\DataInsight\bin\Release\net8.0\publish\Microsoft.Extensions.DependencyInjection.Abstractions.dll

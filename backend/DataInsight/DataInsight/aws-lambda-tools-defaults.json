@@ -1,0 +1,7 @@
+{
+  "region": "us-east-1",
+  "profile": "SantiagoDev",
+  "s3-bucket": "data-insight-deploy-santiago-2026",
+  "template": "serverless.template",
+  "stack-name": "data-insight"
+}

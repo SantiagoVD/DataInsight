@@ -1,0 +1,529 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Santiago\\source\\repos\\DataInsight\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{6BF3BFCB-40E2-4572-856B-D7326E683822}|DataInsight.Worker\\DataInsight.Worker.csproj|c:\\users\\santiago\\source\\repos\\datainsight\\datainsight.worker\\infrastructure\\storage\\s3storageservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6BF3BFCB-40E2-4572-856B-D7326E683822}|DataInsight.Worker\\DataInsight.Worker.csproj|solutionrelative:datainsight.worker\\infrastructure\\storage\\s3storageservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6BF3BFCB-40E2-4572-856B-D7326E683822}|DataInsight.Worker\\DataInsight.Worker.csproj|c:\\users\\santiago\\source\\repos\\datainsight\\datainsight.worker\\messages\\processfilemessage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6BF3BFCB-40E2-4572-856B-D7326E683822}|DataInsight.Worker\\DataInsight.Worker.csproj|solutionrelative:datainsight.worker\\messages\\processfilemessage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6BF3BFCB-40E2-4572-856B-D7326E683822}|DataInsight.Worker\\DataInsight.Worker.csproj|c:\\users\\santiago\\source\\repos\\datainsight\\datainsight.worker\\serialization\\lambdajsonserializer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6BF3BFCB-40E2-4572-856B-D7326E683822}|DataInsight.Worker\\DataInsight.Worker.csproj|solutionrelative:datainsight.worker\\serialization\\lambdajsonserializer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6BF3BFCB-40E2-4572-856B-D7326E683822}|DataInsight.Worker\\DataInsight.Worker.csproj|c:\\users\\santiago\\source\\repos\\datainsight\\datainsight.worker\\function.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6BF3BFCB-40E2-4572-856B-D7326E683822}|DataInsight.Worker\\DataInsight.Worker.csproj|solutionrelative:datainsight.worker\\function.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6BF3BFCB-40E2-4572-856B-D7326E683822}|DataInsight.Worker\\DataInsight.Worker.csproj|c:\\users\\santiago\\source\\repos\\datainsight\\datainsight.worker\\infrastructure\\storage\\is3storageservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6BF3BFCB-40E2-4572-856B-D7326E683822}|DataInsight.Worker\\DataInsight.Worker.csproj|solutionrelative:datainsight.worker\\infrastructure\\storage\\is3storageservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6BF3BFCB-40E2-4572-856B-D7326E683822}|DataInsight.Worker\\DataInsight.Worker.csproj|c:\\users\\santiago\\source\\repos\\datainsight\\datainsight.worker\\infrastructure\\configuration\\awsoptions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6BF3BFCB-40E2-4572-856B-D7326E683822}|DataInsight.Worker\\DataInsight.Worker.csproj|solutionrelative:datainsight.worker\\infrastructure\\configuration\\awsoptions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6BF3BFCB-40E2-4572-856B-D7326E683822}|DataInsight.Worker\\DataInsight.Worker.csproj|c:\\users\\santiago\\source\\repos\\datainsight\\datainsight.worker\\functions\\processfilefunction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6BF3BFCB-40E2-4572-856B-D7326E683822}|DataInsight.Worker\\DataInsight.Worker.csproj|solutionrelative:datainsight.worker\\functions\\processfilefunction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6BF3BFCB-40E2-4572-856B-D7326E683822}|DataInsight.Worker\\DataInsight.Worker.csproj|c:\\users\\santiago\\source\\repos\\datainsight\\datainsight.worker\\domain\\enums\\processingstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6BF3BFCB-40E2-4572-856B-D7326E683822}|DataInsight.Worker\\DataInsight.Worker.csproj|solutionrelative:datainsight.worker\\domain\\enums\\processingstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6BF3BFCB-40E2-4572-856B-D7326E683822}|DataInsight.Worker\\DataInsight.Worker.csproj|c:\\users\\santiago\\source\\repos\\datainsight\\datainsight.worker\\domain\\entities\\processingresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6BF3BFCB-40E2-4572-856B-D7326E683822}|DataInsight.Worker\\DataInsight.Worker.csproj|solutionrelative:datainsight.worker\\domain\\entities\\processingresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6BF3BFCB-40E2-4572-856B-D7326E683822}|DataInsight.Worker\\DataInsight.Worker.csproj|c:\\users\\santiago\\source\\repos\\datainsight\\datainsight.worker\\domain\\entities\\csvrecord.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6BF3BFCB-40E2-4572-856B-D7326E683822}|DataInsight.Worker\\DataInsight.Worker.csproj|solutionrelative:datainsight.worker\\domain\\entities\\csvrecord.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6BF3BFCB-40E2-4572-856B-D7326E683822}|DataInsight.Worker\\DataInsight.Worker.csproj|c:\\users\\santiago\\source\\repos\\datainsight\\datainsight.worker\\dependencyinjection\\servicecollectionextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6BF3BFCB-40E2-4572-856B-D7326E683822}|DataInsight.Worker\\DataInsight.Worker.csproj|solutionrelative:datainsight.worker\\dependencyinjection\\servicecollectionextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6BF3BFCB-40E2-4572-856B-D7326E683822}|DataInsight.Worker\\DataInsight.Worker.csproj|c:\\users\\santiago\\source\\repos\\datainsight\\datainsight.worker\\application\\services\\fileprocessingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6BF3BFCB-40E2-4572-856B-D7326E683822}|DataInsight.Worker\\DataInsight.Worker.csproj|solutionrelative:datainsight.worker\\application\\services\\fileprocessingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6BF3BFCB-40E2-4572-856B-D7326E683822}|DataInsight.Worker\\DataInsight.Worker.csproj|c:\\users\\santiago\\source\\repos\\datainsight\\datainsight.worker\\application\\interfaces\\ifileprocessingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6BF3BFCB-40E2-4572-856B-D7326E683822}|DataInsight.Worker\\DataInsight.Worker.csproj|solutionrelative:datainsight.worker\\application\\interfaces\\ifileprocessingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6BF3BFCB-40E2-4572-856B-D7326E683822}|DataInsight.Worker\\DataInsight.Worker.csproj|c:\\users\\santiago\\source\\repos\\datainsight\\datainsight.worker\\aws-lambda-tools-defaults.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{6BF3BFCB-40E2-4572-856B-D7326E683822}|DataInsight.Worker\\DataInsight.Worker.csproj|solutionrelative:datainsight.worker\\aws-lambda-tools-defaults.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6BF3BFCB-40E2-4572-856B-D7326E683822}|DataInsight.Worker\\DataInsight.Worker.csproj|c:\\users\\santiago\\source\\repos\\datainsight\\datainsight.worker\\datainsight.worker.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{6BF3BFCB-40E2-4572-856B-D7326E683822}|DataInsight.Worker\\DataInsight.Worker.csproj|solutionrelative:datainsight.worker\\datainsight.worker.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B3DD8E6C-7743-440F-B9FE-7B2789921C91}|DataInsight\\DataInsight.csproj|c:\\users\\santiago\\source\\repos\\datainsight\\datainsight\\src\\datainsight.api\\function.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B3DD8E6C-7743-440F-B9FE-7B2789921C91}|DataInsight\\DataInsight.csproj|solutionrelative:datainsight\\src\\datainsight.api\\function.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B3DD8E6C-7743-440F-B9FE-7B2789921C91}|DataInsight\\DataInsight.csproj|c:\\users\\santiago\\source\\repos\\datainsight\\datainsight\\src\\datainsight.api\\dependencyinjection\\servicecollectionextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B3DD8E6C-7743-440F-B9FE-7B2789921C91}|DataInsight\\DataInsight.csproj|solutionrelative:datainsight\\src\\datainsight.api\\dependencyinjection\\servicecollectionextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B3DD8E6C-7743-440F-B9FE-7B2789921C91}|DataInsight\\DataInsight.csproj|c:\\users\\santiago\\source\\repos\\datainsight\\datainsight\\aws-lambda-tools-defaults.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{B3DD8E6C-7743-440F-B9FE-7B2789921C91}|DataInsight\\DataInsight.csproj|solutionrelative:datainsight\\aws-lambda-tools-defaults.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B3DD8E6C-7743-440F-B9FE-7B2789921C91}|DataInsight\\DataInsight.csproj|c:\\users\\santiago\\source\\repos\\datainsight\\datainsight\\src\\datainsight.api\\application\\services\\jobservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B3DD8E6C-7743-440F-B9FE-7B2789921C91}|DataInsight\\DataInsight.csproj|solutionrelative:datainsight\\src\\datainsight.api\\application\\services\\jobservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B3DD8E6C-7743-440F-B9FE-7B2789921C91}|DataInsight\\DataInsight.csproj|c:\\users\\santiago\\source\\repos\\datainsight\\datainsight\\src\\datainsight.api\\messages\\processfilemessage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B3DD8E6C-7743-440F-B9FE-7B2789921C91}|DataInsight\\DataInsight.csproj|solutionrelative:datainsight\\src\\datainsight.api\\messages\\processfilemessage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B3DD8E6C-7743-440F-B9FE-7B2789921C91}|DataInsight\\DataInsight.csproj|c:\\users\\santiago\\source\\repos\\datainsight\\datainsight\\serverless.template||{EC06DED3-700F-4CE3-9313-8E2324BA885D}",
+      "RelativeMoniker": "D:0:0:{B3DD8E6C-7743-440F-B9FE-7B2789921C91}|DataInsight\\DataInsight.csproj|solutionrelative:datainsight\\serverless.template||{EC06DED3-700F-4CE3-9313-8E2324BA885D}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B3DD8E6C-7743-440F-B9FE-7B2789921C91}|DataInsight\\DataInsight.csproj|c:\\users\\santiago\\source\\repos\\datainsight\\datainsight\\readme.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}",
+      "RelativeMoniker": "D:0:0:{B3DD8E6C-7743-440F-B9FE-7B2789921C91}|DataInsight\\DataInsight.csproj|solutionrelative:datainsight\\readme.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B3DD8E6C-7743-440F-B9FE-7B2789921C91}|DataInsight\\DataInsight.csproj|c:\\users\\santiago\\source\\repos\\datainsight\\datainsight\\src\\datainsight.api\\infrastructure\\messaging\\sqspublisher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B3DD8E6C-7743-440F-B9FE-7B2789921C91}|DataInsight\\DataInsight.csproj|solutionrelative:datainsight\\src\\datainsight.api\\infrastructure\\messaging\\sqspublisher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B3DD8E6C-7743-440F-B9FE-7B2789921C91}|DataInsight\\DataInsight.csproj|c:\\users\\santiago\\source\\repos\\datainsight\\datainsight\\src\\datainsight.api\\infrastructure\\configuration\\awsoptions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B3DD8E6C-7743-440F-B9FE-7B2789921C91}|DataInsight\\DataInsight.csproj|solutionrelative:datainsight\\src\\datainsight.api\\infrastructure\\configuration\\awsoptions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B3DD8E6C-7743-440F-B9FE-7B2789921C91}|DataInsight\\DataInsight.csproj|c:\\users\\santiago\\source\\repos\\datainsight\\datainsight\\src\\datainsight.api\\domain\\entities\\processingjob.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B3DD8E6C-7743-440F-B9FE-7B2789921C91}|DataInsight\\DataInsight.csproj|solutionrelative:datainsight\\src\\datainsight.api\\domain\\entities\\processingjob.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B3DD8E6C-7743-440F-B9FE-7B2789921C91}|DataInsight\\DataInsight.csproj|c:\\users\\santiago\\source\\repos\\datainsight\\datainsight\\tests\\datainsight.api.tests\\functions\\createjobfunctiontests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B3DD8E6C-7743-440F-B9FE-7B2789921C91}|DataInsight\\DataInsight.csproj|solutionrelative:datainsight\\tests\\datainsight.api.tests\\functions\\createjobfunctiontests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B3DD8E6C-7743-440F-B9FE-7B2789921C91}|DataInsight\\DataInsight.csproj|c:\\users\\santiago\\source\\repos\\datainsight\\datainsight\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{B3DD8E6C-7743-440F-B9FE-7B2789921C91}|DataInsight\\DataInsight.csproj|solutionrelative:datainsight\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B3DD8E6C-7743-440F-B9FE-7B2789921C91}|DataInsight\\DataInsight.csproj|c:\\users\\santiago\\source\\repos\\datainsight\\datainsight\\tests\\datainsight.api.tests\\services\\jobservicetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B3DD8E6C-7743-440F-B9FE-7B2789921C91}|DataInsight\\DataInsight.csproj|solutionrelative:datainsight\\tests\\datainsight.api.tests\\services\\jobservicetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B3DD8E6C-7743-440F-B9FE-7B2789921C91}|DataInsight\\DataInsight.csproj|c:\\users\\santiago\\source\\repos\\datainsight\\datainsight\\src\\datainsight.api\\serialization\\lambdajsonserializer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B3DD8E6C-7743-440F-B9FE-7B2789921C91}|DataInsight\\DataInsight.csproj|solutionrelative:datainsight\\src\\datainsight.api\\serialization\\lambdajsonserializer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B3DD8E6C-7743-440F-B9FE-7B2789921C91}|DataInsight\\DataInsight.csproj|c:\\users\\santiago\\source\\repos\\datainsight\\datainsight\\datainsight.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{B3DD8E6C-7743-440F-B9FE-7B2789921C91}|DataInsight\\DataInsight.csproj|solutionrelative:datainsight\\datainsight.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "S3StorageService.cs",
+              "DocumentMoniker": "C:\\Users\\Santiago\\source\\repos\\DataInsight\\DataInsight.Worker\\Infrastructure\\Storage\\S3StorageService.cs",
+              "RelativeDocumentMoniker": "DataInsight.Worker\\Infrastructure\\Storage\\S3StorageService.cs",
+              "ToolTip": "C:\\Users\\Santiago\\source\\repos\\DataInsight\\DataInsight.Worker\\Infrastructure\\Storage\\S3StorageService.cs",
+              "RelativeToolTip": "DataInsight.Worker\\Infrastructure\\Storage\\S3StorageService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-20T16:41:55.204Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "LambdaJsonSerializer.cs",
+              "DocumentMoniker": "C:\\Users\\Santiago\\source\\repos\\DataInsight\\DataInsight.Worker\\Serialization\\LambdaJsonSerializer.cs",
+              "RelativeDocumentMoniker": "DataInsight.Worker\\Serialization\\LambdaJsonSerializer.cs",
+              "ToolTip": "C:\\Users\\Santiago\\source\\repos\\DataInsight\\DataInsight.Worker\\Serialization\\LambdaJsonSerializer.cs",
+              "RelativeToolTip": "DataInsight.Worker\\Serialization\\LambdaJsonSerializer.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-20T16:42:04.291Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ProcessFileMessage.cs",
+              "DocumentMoniker": "C:\\Users\\Santiago\\source\\repos\\DataInsight\\DataInsight.Worker\\Messages\\ProcessFileMessage.cs",
+              "RelativeDocumentMoniker": "DataInsight.Worker\\Messages\\ProcessFileMessage.cs",
+              "ToolTip": "C:\\Users\\Santiago\\source\\repos\\DataInsight\\DataInsight.Worker\\Messages\\ProcessFileMessage.cs",
+              "RelativeToolTip": "DataInsight.Worker\\Messages\\ProcessFileMessage.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-20T16:41:57.184Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "IS3StorageService.cs",
+              "DocumentMoniker": "C:\\Users\\Santiago\\source\\repos\\DataInsight\\DataInsight.Worker\\Infrastructure\\Storage\\IS3StorageService.cs",
+              "RelativeDocumentMoniker": "DataInsight.Worker\\Infrastructure\\Storage\\IS3StorageService.cs",
+              "ToolTip": "C:\\Users\\Santiago\\source\\repos\\DataInsight\\DataInsight.Worker\\Infrastructure\\Storage\\IS3StorageService.cs",
+              "RelativeToolTip": "DataInsight.Worker\\Infrastructure\\Storage\\IS3StorageService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-20T16:41:53.352Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "AwsOptions.cs",
+              "DocumentMoniker": "C:\\Users\\Santiago\\source\\repos\\DataInsight\\DataInsight.Worker\\Infrastructure\\Configuration\\AwsOptions.cs",
+              "RelativeDocumentMoniker": "DataInsight.Worker\\Infrastructure\\Configuration\\AwsOptions.cs",
+              "ToolTip": "C:\\Users\\Santiago\\source\\repos\\DataInsight\\DataInsight.Worker\\Infrastructure\\Configuration\\AwsOptions.cs",
+              "RelativeToolTip": "DataInsight.Worker\\Infrastructure\\Configuration\\AwsOptions.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-20T16:41:50.759Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ProcessFileFunction.cs",
+              "DocumentMoniker": "C:\\Users\\Santiago\\source\\repos\\DataInsight\\DataInsight.Worker\\Functions\\ProcessFileFunction.cs",
+              "RelativeDocumentMoniker": "DataInsight.Worker\\Functions\\ProcessFileFunction.cs",
+              "ToolTip": "C:\\Users\\Santiago\\source\\repos\\DataInsight\\DataInsight.Worker\\Functions\\ProcessFileFunction.cs",
+              "RelativeToolTip": "DataInsight.Worker\\Functions\\ProcessFileFunction.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-20T16:41:46.705Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Function.cs",
+              "DocumentMoniker": "C:\\Users\\Santiago\\source\\repos\\DataInsight\\DataInsight.Worker\\Function.cs",
+              "RelativeDocumentMoniker": "DataInsight.Worker\\Function.cs",
+              "ToolTip": "C:\\Users\\Santiago\\source\\repos\\DataInsight\\DataInsight.Worker\\Function.cs",
+              "RelativeToolTip": "DataInsight.Worker\\Function.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-20T16:39:49.319Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ProcessingStatus.cs",
+              "DocumentMoniker": "C:\\Users\\Santiago\\source\\repos\\DataInsight\\DataInsight.Worker\\Domain\\Enums\\ProcessingStatus.cs",
+              "RelativeDocumentMoniker": "DataInsight.Worker\\Domain\\Enums\\ProcessingStatus.cs",
+              "ToolTip": "C:\\Users\\Santiago\\source\\repos\\DataInsight\\DataInsight.Worker\\Domain\\Enums\\ProcessingStatus.cs",
+              "RelativeToolTip": "DataInsight.Worker\\Domain\\Enums\\ProcessingStatus.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-20T16:41:45.21Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ProcessingResult.cs",
+              "DocumentMoniker": "C:\\Users\\Santiago\\source\\repos\\DataInsight\\DataInsight.Worker\\Domain\\Entities\\ProcessingResult.cs",
+              "RelativeDocumentMoniker": "DataInsight.Worker\\Domain\\Entities\\ProcessingResult.cs",
+              "ToolTip": "C:\\Users\\Santiago\\source\\repos\\DataInsight\\DataInsight.Worker\\Domain\\Entities\\ProcessingResult.cs",
+              "RelativeToolTip": "DataInsight.Worker\\Domain\\Entities\\ProcessingResult.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-20T16:41:43.234Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "CsvRecord.cs",
+              "DocumentMoniker": "C:\\Users\\Santiago\\source\\repos\\DataInsight\\DataInsight.Worker\\Domain\\Entities\\CsvRecord.cs",
+              "RelativeDocumentMoniker": "DataInsight.Worker\\Domain\\Entities\\CsvRecord.cs",
+              "ToolTip": "C:\\Users\\Santiago\\source\\repos\\DataInsight\\DataInsight.Worker\\Domain\\Entities\\CsvRecord.cs",
+              "RelativeToolTip": "DataInsight.Worker\\Domain\\Entities\\CsvRecord.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-20T16:41:42.454Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "ServiceCollectionExtensions.cs",
+              "DocumentMoniker": "C:\\Users\\Santiago\\source\\repos\\DataInsight\\DataInsight.Worker\\DependencyInjection\\ServiceCollectionExtensions.cs",
+              "RelativeDocumentMoniker": "DataInsight.Worker\\DependencyInjection\\ServiceCollectionExtensions.cs",
+              "ToolTip": "C:\\Users\\Santiago\\source\\repos\\DataInsight\\DataInsight.Worker\\DependencyInjection\\ServiceCollectionExtensions.cs",
+              "RelativeToolTip": "DataInsight.Worker\\DependencyInjection\\ServiceCollectionExtensions.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-20T16:41:39.395Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "FileProcessingService.cs",
+              "DocumentMoniker": "C:\\Users\\Santiago\\source\\repos\\DataInsight\\DataInsight.Worker\\Application\\Services\\FileProcessingService.cs",
+              "RelativeDocumentMoniker": "DataInsight.Worker\\Application\\Services\\FileProcessingService.cs",
+              "ToolTip": "C:\\Users\\Santiago\\source\\repos\\DataInsight\\DataInsight.Worker\\Application\\Services\\FileProcessingService.cs",
+              "RelativeToolTip": "DataInsight.Worker\\Application\\Services\\FileProcessingService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-20T16:41:35.799Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "IFileProcessingService.cs",
+              "DocumentMoniker": "C:\\Users\\Santiago\\source\\repos\\DataInsight\\DataInsight.Worker\\Application\\Interfaces\\IFileProcessingService.cs",
+              "RelativeDocumentMoniker": "DataInsight.Worker\\Application\\Interfaces\\IFileProcessingService.cs",
+              "ToolTip": "C:\\Users\\Santiago\\source\\repos\\DataInsight\\DataInsight.Worker\\Application\\Interfaces\\IFileProcessingService.cs",
+              "RelativeToolTip": "DataInsight.Worker\\Application\\Interfaces\\IFileProcessingService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-20T16:41:32.134Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "aws-lambda-tools-defaults.json",
+              "DocumentMoniker": "C:\\Users\\Santiago\\source\\repos\\DataInsight\\DataInsight.Worker\\aws-lambda-tools-defaults.json",
+              "RelativeDocumentMoniker": "DataInsight.Worker\\aws-lambda-tools-defaults.json",
+              "ToolTip": "C:\\Users\\Santiago\\source\\repos\\DataInsight\\DataInsight.Worker\\aws-lambda-tools-defaults.json",
+              "RelativeToolTip": "DataInsight.Worker\\aws-lambda-tools-defaults.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-08-20T16:40:04.726Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "DataInsight.Worker",
+              "DocumentMoniker": "C:\\Users\\Santiago\\source\\repos\\DataInsight\\DataInsight.Worker\\DataInsight.Worker.csproj",
+              "RelativeDocumentMoniker": "DataInsight.Worker\\DataInsight.Worker.csproj",
+              "ToolTip": "C:\\Users\\Santiago\\source\\repos\\DataInsight\\DataInsight.Worker\\DataInsight.Worker.csproj",
+              "RelativeToolTip": "DataInsight.Worker\\DataInsight.Worker.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-08-20T16:36:59.805Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "ServiceCollectionExtensions.cs",
+              "DocumentMoniker": "C:\\Users\\Santiago\\source\\repos\\DataInsight\\DataInsight\\src\\DataInsight.Api\\DependencyInjection\\ServiceCollectionExtensions.cs",
+              "RelativeDocumentMoniker": "DataInsight\\src\\DataInsight.Api\\DependencyInjection\\ServiceCollectionExtensions.cs",
+              "ToolTip": "C:\\Users\\Santiago\\source\\repos\\DataInsight\\DataInsight\\src\\DataInsight.Api\\DependencyInjection\\ServiceCollectionExtensions.cs",
+              "RelativeToolTip": "DataInsight\\src\\DataInsight.Api\\DependencyInjection\\ServiceCollectionExtensions.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-19T16:50:28.982Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Function.cs",
+              "DocumentMoniker": "C:\\Users\\Santiago\\source\\repos\\DataInsight\\DataInsight\\src\\DataInsight.Api\\Function.cs",
+              "RelativeDocumentMoniker": "DataInsight\\src\\DataInsight.Api\\Function.cs",
+              "ToolTip": "C:\\Users\\Santiago\\source\\repos\\DataInsight\\DataInsight\\src\\DataInsight.Api\\Function.cs",
+              "RelativeToolTip": "DataInsight\\src\\DataInsight.Api\\Function.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-19T16:39:32.636Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "aws-lambda-tools-defaults.json",
+              "DocumentMoniker": "C:\\Users\\Santiago\\source\\repos\\DataInsight\\DataInsight\\aws-lambda-tools-defaults.json",
+              "RelativeDocumentMoniker": "DataInsight\\aws-lambda-tools-defaults.json",
+              "ToolTip": "C:\\Users\\Santiago\\source\\repos\\DataInsight\\DataInsight\\aws-lambda-tools-defaults.json",
+              "RelativeToolTip": "DataInsight\\aws-lambda-tools-defaults.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-08-20T16:11:48.9Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "JobService.cs",
+              "DocumentMoniker": "C:\\Users\\Santiago\\source\\repos\\DataInsight\\DataInsight\\src\\DataInsight.Api\\Application\\Services\\JobService.cs",
+              "RelativeDocumentMoniker": "DataInsight\\src\\DataInsight.Api\\Application\\Services\\JobService.cs",
+              "ToolTip": "C:\\Users\\Santiago\\source\\repos\\DataInsight\\DataInsight\\src\\DataInsight.Api\\Application\\Services\\JobService.cs",
+              "RelativeToolTip": "DataInsight\\src\\DataInsight.Api\\Application\\Services\\JobService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAswBYAAABCAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-19T16:43:46.74Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "SqsPublisher.cs",
+              "DocumentMoniker": "C:\\Users\\Santiago\\source\\repos\\DataInsight\\DataInsight\\src\\DataInsight.Api\\Infrastructure\\Messaging\\SqsPublisher.cs",
+              "RelativeDocumentMoniker": "DataInsight\\src\\DataInsight.Api\\Infrastructure\\Messaging\\SqsPublisher.cs",
+              "ToolTip": "C:\\Users\\Santiago\\source\\repos\\DataInsight\\DataInsight\\src\\DataInsight.Api\\Infrastructure\\Messaging\\SqsPublisher.cs",
+              "RelativeToolTip": "DataInsight\\src\\DataInsight.Api\\Infrastructure\\Messaging\\SqsPublisher.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACAAAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-19T16:47:30.863Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "Readme.md",
+              "DocumentMoniker": "C:\\Users\\Santiago\\source\\repos\\DataInsight\\DataInsight\\Readme.md",
+              "RelativeDocumentMoniker": "DataInsight\\Readme.md",
+              "ToolTip": "C:\\Users\\Santiago\\source\\repos\\DataInsight\\DataInsight\\Readme.md",
+              "RelativeToolTip": "DataInsight\\Readme.md",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2026-08-19T16:54:18.173Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "serverless.template",
+              "DocumentMoniker": "C:\\Users\\Santiago\\source\\repos\\DataInsight\\DataInsight\\serverless.template",
+              "RelativeDocumentMoniker": "DataInsight\\serverless.template",
+              "ToolTip": "C:\\Users\\Santiago\\source\\repos\\DataInsight\\DataInsight\\serverless.template",
+              "RelativeToolTip": "DataInsight\\serverless.template",
+              "ViewState": "AgIAACsAAAAAAAAAAAAiwDMAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2026-08-19T16:57:36.078Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "ProcessFileMessage.cs",
+              "DocumentMoniker": "C:\\Users\\Santiago\\source\\repos\\DataInsight\\DataInsight\\src\\DataInsight.Api\\Messages\\ProcessFileMessage.cs",
+              "RelativeDocumentMoniker": "DataInsight\\src\\DataInsight.Api\\Messages\\ProcessFileMessage.cs",
+              "ToolTip": "C:\\Users\\Santiago\\source\\repos\\DataInsight\\DataInsight\\src\\DataInsight.Api\\Messages\\ProcessFileMessage.cs",
+              "RelativeToolTip": "DataInsight\\src\\DataInsight.Api\\Messages\\ProcessFileMessage.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAA9AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-19T20:27:25.223Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "AwsOptions.cs",
+              "DocumentMoniker": "C:\\Users\\Santiago\\source\\repos\\DataInsight\\DataInsight\\src\\DataInsight.Api\\Infrastructure\\Configuration\\AwsOptions.cs",
+              "RelativeDocumentMoniker": "DataInsight\\src\\DataInsight.Api\\Infrastructure\\Configuration\\AwsOptions.cs",
+              "ToolTip": "C:\\Users\\Santiago\\source\\repos\\DataInsight\\DataInsight\\src\\DataInsight.Api\\Infrastructure\\Configuration\\AwsOptions.cs",
+              "RelativeToolTip": "DataInsight\\src\\DataInsight.Api\\Infrastructure\\Configuration\\AwsOptions.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-19T20:27:23.062Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "ProcessingJob.cs",
+              "DocumentMoniker": "C:\\Users\\Santiago\\source\\repos\\DataInsight\\DataInsight\\src\\DataInsight.Api\\Domain\\Entities\\ProcessingJob.cs",
+              "RelativeDocumentMoniker": "DataInsight\\src\\DataInsight.Api\\Domain\\Entities\\ProcessingJob.cs",
+              "ToolTip": "C:\\Users\\Santiago\\source\\repos\\DataInsight\\DataInsight\\src\\DataInsight.Api\\Domain\\Entities\\ProcessingJob.cs",
+              "RelativeToolTip": "DataInsight\\src\\DataInsight.Api\\Domain\\Entities\\ProcessingJob.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-19T20:27:21.047Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "CreateJobFunctionTests.cs",
+              "DocumentMoniker": "C:\\Users\\Santiago\\source\\repos\\DataInsight\\DataInsight\\tests\\DataInsight.Api.Tests\\Functions\\CreateJobFunctionTests.cs",
+              "RelativeDocumentMoniker": "DataInsight\\tests\\DataInsight.Api.Tests\\Functions\\CreateJobFunctionTests.cs",
+              "ToolTip": "C:\\Users\\Santiago\\source\\repos\\DataInsight\\DataInsight\\tests\\DataInsight.Api.Tests\\Functions\\CreateJobFunctionTests.cs",
+              "RelativeToolTip": "DataInsight\\tests\\DataInsight.Api.Tests\\Functions\\CreateJobFunctionTests.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-19T16:56:24.499Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "C:\\Users\\Santiago\\source\\repos\\DataInsight\\DataInsight\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "DataInsight\\Properties\\launchSettings.json",
+              "ToolTip": "C:\\Users\\Santiago\\source\\repos\\DataInsight\\DataInsight\\Properties\\launchSettings.json",
+              "RelativeToolTip": "DataInsight\\Properties\\launchSettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-08-19T16:55:53.641Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "JobServiceTests.cs",
+              "DocumentMoniker": "C:\\Users\\Santiago\\source\\repos\\DataInsight\\DataInsight\\tests\\DataInsight.Api.Tests\\Services\\JobServiceTests.cs",
+              "RelativeDocumentMoniker": "DataInsight\\tests\\DataInsight.Api.Tests\\Services\\JobServiceTests.cs",
+              "ToolTip": "C:\\Users\\Santiago\\source\\repos\\DataInsight\\DataInsight\\tests\\DataInsight.Api.Tests\\Services\\JobServiceTests.cs",
+              "RelativeToolTip": "DataInsight\\tests\\DataInsight.Api.Tests\\Services\\JobServiceTests.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-19T16:56:39.455Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "LambdaJsonSerializer.cs",
+              "DocumentMoniker": "C:\\Users\\Santiago\\source\\repos\\DataInsight\\DataInsight\\src\\DataInsight.Api\\Serialization\\LambdaJsonSerializer.cs",
+              "RelativeDocumentMoniker": "DataInsight\\src\\DataInsight.Api\\Serialization\\LambdaJsonSerializer.cs",
+              "ToolTip": "C:\\Users\\Santiago\\source\\repos\\DataInsight\\DataInsight\\src\\DataInsight.Api\\Serialization\\LambdaJsonSerializer.cs",
+              "RelativeToolTip": "DataInsight\\src\\DataInsight.Api\\Serialization\\LambdaJsonSerializer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-19T16:50:43.671Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "DataInsight.csproj",
+              "DocumentMoniker": "C:\\Users\\Santiago\\source\\repos\\DataInsight\\DataInsight\\DataInsight.csproj",
+              "RelativeDocumentMoniker": "DataInsight\\DataInsight.csproj",
+              "ToolTip": "C:\\Users\\Santiago\\source\\repos\\DataInsight\\DataInsight\\DataInsight.csproj",
+              "RelativeToolTip": "DataInsight\\DataInsight.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAABFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-08-19T16:41:58.885Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
